@@ -1,5 +1,7 @@
 const dotsCollection = document.querySelectorAll('.dot');
 const slideCollection = document.querySelectorAll('.slide');
+const arrowRight = document.querySelector('.arrow-right');
+const arrowLeft = document.querySelector('.arrow-left');
 let slideActive = 0;
 
 hideSlideActive = () => {
@@ -44,9 +46,6 @@ showPreviousSlide = () => {
     }
     showSlide(slideCollection[slideActive])
 }
-
-const arrowRight = document.querySelector('.arrow-right');
-const arrowLeft = document.querySelector('.arrow-left');
 
 arrowRight.addEventListener('click', showNextSlide);
 arrowLeft.addEventListener('click', showPreviousSlide);
